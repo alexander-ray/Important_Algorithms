@@ -5,15 +5,20 @@ using namespace std;
 
 /*
 Insertion sort takes a reference to an input array of integers
-Sorts array using insertion sort algorithm
+Insertion sort runs in O(n^2) time
 
 Basic insertion sort algorithm:
 Start with an array, containing a sorted subarray and an unsorted subarray
     Initial sorted subarray consists of arr[0] (the first element)
 Each iteration, move one element from the unsorted subarray to the sorted
     Take element from unsorted and place in correct position in sorted
-
 The algorithm is finished when there are no more unsorted elements
+
+Proof by loop invarient:
+    1) Initialization: For-loop starts at i=1. Subarray arr[1, ... , i-1] is sorted (trivially)
+    2) Maintinence: Before and after each iteration of the for-loop, subarray arr[1, ... , i-1] is sorted
+    3) Termination: n = arr.length, therefore i = n+1 at loop termination. At loop invarient n+1, subarray arr[1, ... ,
+    n+1-1] is sorted, therefore the entire array is sorted
 */
 void InsertionSort::insertionSort(int arr[], int size) {
     // if size is 0 or 1, the array is already sorted
