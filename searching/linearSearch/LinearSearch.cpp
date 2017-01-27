@@ -7,6 +7,7 @@ using namespace std;
 Linear search takes an array of ints, size of array, and target
 Linear search runs in O(n) time
     Worst case, the algorithm searches through n elements
+Linear search works on sorted or unsorted data
 
 Basic linear search algorithm:
 Ensure array is not empty
