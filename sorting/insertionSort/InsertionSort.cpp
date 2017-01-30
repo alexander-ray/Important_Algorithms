@@ -4,7 +4,7 @@
 using namespace std;
 
 /*
-Insertion sort takes a reference to an input array of integers
+Insertion sort takes an array of integers and the size
 Insertion sort runs in O(n^2) time
 
 Basic insertion sort algorithm:
