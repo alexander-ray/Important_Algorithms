@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void mergeSort(int arr[], int l, int r) {
+void MergeSort::mergeSort(int arr[], int l, int r) {
     if (l < r) {
         int m  = (l + r) / 2;
         // Call mergesort on subarray from l to midpoint
@@ -15,7 +15,7 @@ void mergeSort(int arr[], int l, int r) {
     }
 }
 
-void merge(int arr[], int l, int m, int r) {
+void MergeSort::merge(int arr[], int l, int m, int r) {
     // Num elements in left subarray
     int numLeft = m - l + 1;
     // Num elements in right subarray
